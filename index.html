@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- nav start -->
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+            <img src="images/logo.png" alt="" class="logo">
+        </a>
+            <ul>
+                <li><img src="images/notification.png" alt=""></li>
+                <li><img src="images/inbox.png" alt=""></li>
+                <li><a href="https://www.facebook.com/watch/hashtag/bhakti/" target="_blank"><img src="images/video.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="search">
+            </div>
+
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png" alt="">
+            </div>
+        </div>
+        <!-- <div class="user-profile">
+            <img src="images/profile-pic.png" alt="">
+            <div>
+                <p>John deck</p>
+                <small>Public <i class="fa fa-caret-down"></i></small>
+            </div>
+        </div> -->
+
+        <!-- Setting menu -->
+        <div class="setting-menu">
+           <div id="dark-btn" class="dark-btn-on">
+            <span></span>
+           </div>
+
+            <div class="settings-menu-inner">
+    
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>John deck</p>
+                        <a href="./profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" alt="">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>               
+                    </div>
+                </div>
+                <hr>
+               <div class="setting-links">
+                <img src="images/setting.png" class="settings-icon" alt="">
+                <a href="#">Setting & Privacy <img src="images/arrow.png" alt="" width="10px"></a>
+               </div>
+               <div class="setting-links">
+                <img src="images/help.png" class="settings-icon" alt="">
+                <a href="#">Help & Support <img src="images/arrow.png" alt="" width="10px"></a>
+               </div>
+               <div class="setting-links">
+                <img src="images/display.png" class="settings-icon" alt="">
+                <a href="#">Display & Accessibility <img src="images/arrow.png" alt="" width="10px"></a>
+               </div>
+               <div class="setting-links">
+                <img src="images/logout.png" class="settings-icon" alt="">
+                <a href="#">logout <img src="images/arrow.png" alt="" width="10px"></a>
+               </div>
+    
+    
+            </div>
+    
+        </div>
+    </nav>
+    
+    <!-- nav end -->
+    <div class="container">
+        <!------- left sidebar start ------->
+        <div class="left-sidebar">
+        <div class="imp-links">
+            <a href="#" onclick="Latest_news()"><img src="images/news.png" alt="">Latest News</a>
+            <a href="./profile.html" ><img src="images/friends.png" alt="">friends</a>
+            <a href="./profile.html" ><img src="images/group.png" alt="">group</a>
+            <a href="#" onclick="market()"><img src="images/marketplace.png" alt="" >marketplace</a>
+            <a href="#" onclick="netflix()"><img src="images/watch.png" alt="">watch</a>
+            <a href="#">See More</a>
+        </div>
+
+        <div class="shortcut-links">
+        <p>Your Shortcuts</p>
+        <a href="https://www.youtube.com/watch?v=z0n1aQ3IxWI" target="_blank"><img src="images/shortcut-1.png" alt="">web developer</a>
+        <a href="https://www.youtube.com/watch?v=lYAk5ebCg3g" target="_blank"><img src="images/shortcut-2.png" alt="">web designer</a>
+        <a href="https://www.youtube.com/watch?v=L_eF8az2cSA" target="_blank"><img src="images/shortcut-3.png" alt="">full stack developer</a>
+        <a href="https://www.youtube.com/watch?v=z0n1aQ3IxWI" target="_blank"><img src="images/shortcut-4.png" alt="">frontened developer</a>
+        </div>
+        </div>
+          <!------- left sidebar End ------->
+
+        <!--------- main content start -------->
+        <div class="main-content">
+         <div class="story-gallery">
+            <div class="story story1">
+                <img src="images/upload.png" alt="">
+                <p>Post Story</p>
+            </div>
+            <div class="story story2">
+                <img src="images/member-1.png" alt="">
+                <p>Himanshi tivari</p>
+            </div>
+            <div class="story story3">
+                <img src="images/member-2.png" alt="">
+                <p>Aditya singh</p>
+            </div>
+            <div class="story story4">
+                <img src="images/member-3.png" alt="">
+                <p>joya khan</p>
+            </div>
+            <div class="story story5">
+                <img src="images/member-4.png" alt="">
+                <p>Shashank mishra</p>
+            </div>
+         </div>
+
+         <div class="write-post-container">
+            <div class="user-profile">
+                <img src="images/profile-pic.png" alt="">
+                <div>
+                    <p>John deck</p>
+                    <small>Public <i class="fa fa-caret-down"></i></small>
+                </div>
+            </div>
+            <div class="post-input-container">
+                <textarea rows="3" placeholder="what are your think about AI? john"></textarea>
+                <div class="add-post-links">
+                    <a href="#"><img src="images/live-video.png" alt="">Live Vidio</a>
+                    <a href="#"><img src="images/photo.png" alt="">Photo/Vidio</a>
+                    <a href="#"><img src="images/feeling.png" alt="">Feeling/Activity</a>
+                </div>
+            </div>
+         </div>
+           
+         <div class="post-container">
+            <div class="post-row">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>John deck</p>
+                        <span>July 13 2023, 10:00AM</span>
+                    </div>
+                </div>
+             <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+            </div>
+            <p class="post-text">1.“Behind every successful student, there is a <span>deactivated Facebook account</span>.”<br>
+                2.“Life is like a journey and we are riding the bus.”<br>
+                3.“Life is like a dance; the people you meet are your dance partners.”<br>
+                4.“Life is like a canvas; the people you meet <span>provide the colors</span> to create a picture.”
+             <a href="#">@Create own story</a></p>
+             <img src="images/feed-image-1.png" alt="" class="post-img">
+             <div class="post-row">
+                <div class="activity-icons">
+                <div><img src="images/like-blue.png" alt="">120</div>
+                <div><img src="images/comments.png" alt="">29</div>
+                <div><img src="images/share.png" alt="">12</div>
+                </div>
+                <div class="post-profile-icon">
+                 <img src="images/profile-pic.png" alt=""><i class="fa fa-caret-down"></i>
+                </div>
+             </div>
+         </div>
+         <div class="post-container">
+            <div class="post-row">
+                <div class="user-profile">
+                    <img src="images/photo1.png" alt="">
+                    <div>
+                        <p>Dr.Herrison Wells</p>
+                        <span>July 13 2023, 11:00PM</span>
+                    </div>
+                </div>
+             <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+            </div>
+            <p class="post-text">I hope you have a vacation that is as fantastic as you. You are always the life of the party; I’m sure you’ll have a wonderful time there.
+             <a href="#">@Create own story</a></p>
+             <img src="images/feed-image-2.png" alt="" class="post-img">
+             <div class="post-row">
+                <div class="activity-icons">
+                <div><img src="images/like.png" alt="">113</div>
+                <div><img src="images/comments.png" alt="">32</div>
+                <div><img src="images/share.png" alt="">20</div>
+                </div>
+                <div class="post-profile-icon">
+                 <img src="images/photo1.png" alt=""><i class="fa fa-caret-down"></i>
+                </div>
+             </div>
+         </div>
+
+         <div class="post-container">
+            <div class="post-row">
+                <div class="user-profile">
+                    <img src="images/photo2.png" alt="">
+                    <div>
+                        <p>Ronny</p>
+                        <span>July 1 2023, 09:00AM</span>
+                    </div>
+                </div>
+             <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+            </div>
+            <p class="post-text">“Sometimes you find yourself in the middle of nowhere and sometimes in the middle of nowhere you find yourself.” 
+             <a href="#">@Create own story</a></p>
+             <img src="images/feed-image-3.png" alt="" class="post-img">
+             <div class="post-row">
+                <div class="activity-icons">
+                <div><img src="images/like.png" alt="">103</div>
+                <div><img src="images/comments.png" alt="">13</div>
+                <div><img src="images/share.png" alt="">5</div>
+                </div>
+                <div class="post-profile-icon">
+                 <img src="images/photo2.png" alt=""><i class="fa fa-caret-down"></i>
+                </div>
+             </div>
+         </div>
+
+         <div class="post-container">
+            <div class="post-row">
+                <div class="user-profile">
+                    <img src="images/member-8.png" alt="">
+                    <div>
+                        <p>Mrs. Catlein</p>
+                        <span>June 13 2023, 11:00AM</span>
+                    </div>
+                </div>
+             <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+            </div>
+            <p class="post-text">“Happy life is not where you have everything; but appreciating everything you have in the moment.”<br>“You are the source of happiness.”</p>
+             <img src="images/feed-image-4.png" alt="" class="post-img">
+             <div class="post-row">
+                <div class="activity-icons">
+                <div><img src="images/like.png" alt="">183</div>
+                <div><img src="images/comments.png" alt="">62</div>
+                <div><img src="images/share.png" alt="">34</div>
+                </div>
+                <div class="post-profile-icon">
+                 <img src="images/member-8.png" alt=""><i class="fa fa-caret-down"></i>
+                </div>
+             </div>
+         </div>
+
+         <div class="post-container">
+            <div class="post-row">
+                <div class="user-profile">
+                    <img src="images/photo3.png" alt="">
+                    <div>
+                        <p>Eddey thawn</p>
+                        <span>July 3 2023, 2:00PM</span>
+                    </div>
+                </div>
+             <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+            </div>
+            <p class="post-text">“I believe that words are strong, that they can overwhelm what we fear when fear seems more awful than life is good.”<br>
+                Surely only boring people went in for conversations consisting of questions and answers. The art of true conversation consisted in the play of minds.</p>
+             <img src="images/feed-image-5.png" alt="" class="post-img">
+             <div class="post-row">
+                <div class="activity-icons">
+                <div><img src="images/like-blue.png" alt="">123</div>
+                <div><img src="images/comments.png" alt="">39</div>
+                <div><img src="images/share.png" alt="">19</div>
+                </div>
+                <div class="post-profile-icon">
+                 <img src="images/photo3.png" alt=""><i class="fa fa-caret-down"></i>
+                </div>
+             </div>
+         </div>
+          
+         <button type="button" class="load-more-btn">Load More</button>
+        </div>
+         <!--------- main content End -------->
+
+        <!----------- right sidebar start -------------->
+        <div class="right-sidebar">
+        <div class="sidebar-title">
+            <h4>Events</h4>
+            <a href="#">See All</a>
+        </div>
+
+        <div class="event">
+            <div class="left-event">
+                <h3>18</h3>
+                <span>March</span>
+            </div>
+            <div class="right-event">
+                <h4>Social Media</h4>
+                <p> <i class="fa fa-map-marker-alt"></i> National Park</p>
+                <a href="#">More Info</a>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="left-event">
+                <h3>28</h3>
+                <span>May</span>
+            </div>
+            <div class="right-event">
+                <h4>Networking</h4>
+                <p><i class="fa fa-map-marker-alt"></i> digital marketing</p>
+                <a href="#">More Info</a>
+            </div>
+        </div>
+        <div class="sidebar-title">
+            <h4>Advertisment</h4>
+            <a href="#">Close</a>
+        </div>
+        <img src="images/advertisement.png" class="sidebar-ads">
+        <div class="sidebar-title">
+            <h4>Conversation</h4>
+            <a href="#">Hide Chat</a>
+        </div>
+             
+        <div class="online-list">
+            <div class="online">
+                <img src="images/member-1.png" alt="">
+            </div>
+            <p>Almond blender</p>
+        </div>
+        <div class="online-list">
+            <div class="online">
+                <img src="images/member-2.png" alt="">
+            </div>
+            <p>jack</p>
+        </div>
+        <div class="online-list">
+            <div class="online">
+                <img src="images/member-3.png" alt="">
+            </div>
+            <p>iris hawk</p>
+        </div>
+        <div class="online-list">
+            <div class="online">
+                <img src="images/member-4.png" alt="">
+            </div>
+            <p>stefan</p>
+        </div>
+        <div class="online-list">
+            <div class="online">
+                <img src="images/member-5.png" alt="">
+            </div>
+            <p>Mr. joe</p>
+        </div>
+       
+
+        
+        </div>
+        <!----------- right sidebar End -------------->
+    </div>
+    <div class="footer">
+        <p>@copyright - 2023  easy to remove</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

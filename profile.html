@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page - SocialBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- nav start -->
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+            <img src="images/logo.png" alt="" class="logo">
+        </a>
+            <ul>
+                <li><img src="images/notification.png" alt=""></li>
+                <li><img src="images/inbox.png" alt=""></li>
+                <li><img src="images/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="search">
+            </div>
+
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png" alt="">
+            </div>
+        </div>
+        <!-- <div class="user-profile">
+            <img src="images/profile-pic.png" alt="">
+            <div>
+                <p>John deck</p>
+                <small>Public <i class="fa fa-caret-down"></i></small>
+            </div>
+        </div> -->
+
+        <!-- Setting menu -->
+        <div class="setting-menu">
+           <div id="dark-btn" class="dark-btn-on">
+            <span></span>
+           </div>
+
+            <div class="settings-menu-inner">
+    
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>John deck</p>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" alt="">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>               
+                    </div>
+                </div>
+                <hr>
+               <div class="setting-links">
+                <img src="images/setting.png" class="settings-icon" alt="">
+                <a href="#">Setting & Privacy <img src="images/arrow.png" alt="" width="10px"></a>
+               </div>
+               <div class="setting-links">
+                <img src="images/help.png" class="settings-icon" alt="">
+                <a href="#">Help & Support <img src="images/arrow.png" alt="" width="10px"></a>
+               </div>
+               <div class="setting-links">
+                <img src="images/display.png" class="settings-icon" alt="">
+                <a href="#">Display & Accessibility <img src="images/arrow.png" alt="" width="10px"></a>
+               </div>
+               <div class="setting-links">
+                <img src="images/logout.png" class="settings-icon" alt="">
+                <a href="#">logout <img src="images/arrow.png" alt="" width="10px"></a>
+               </div>
+    
+    
+            </div>
+    
+        </div>
+    </nav>
+    
+    <!-- nav end -->
+  
+    <!-- profile page start -->
+
+    <div class="profile-container">
+        <img src="images/cover.png" alt="not found" class="cover-img">
+        <div class="profile-details">
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src="images/profile.png" alt="not found" class="pd-img">
+                    <div>
+                    <h3>jack nikolas</h3>
+                    <p>217 Friends - 34 mutual</p>
+                    <img src="images/member-1.png" alt="not found">
+                    <img src="images/member-2.png" alt="not found">
+                    <img src="images/member-3.png" alt="not found">
+                    <img src="images/member-4.png" alt="not found">                   
+                </div>
+                </div>
+            </div>
+            <div class="pd-right">
+            <button type="button"><img src="images/add-friends.png" alt="not found"> Friends</button>
+            <button type="button"><img src="images/message.png" alt="not found"> Message</button>
+            <br>
+            <a href=""><img src="images/more.png" alt="not found"></a>
+        </div>
+        </div>
+
+        <div class="profile-info">
+            <div class="info-col">
+              <div class="profile-intro">
+                <h3>intro</h3>
+                <p class="intro-text">believe in yourself and you can do unbelievable things <img src="images/feeling.png" alt=""></p>
+                <hr>
+                <ul>
+                    <li><img src="images/profile-job.png" alt=""> Director at 89media</li>
+                    <li><img src="images/profile-study.png" alt=""> Student at HBTU kanpur</li>
+                    <li> <img src="images/profile-study.png" alt="">Graduation Year 2026</li>
+                    <li> <img src="images/profile-home.png" alt="">Lives in Fatehpur</li>
+                    <li> <img src="images/profile-location.png" alt="">From UP, India</li>
+                </ul>
+              </div>
+
+              <div class="profile-intro">
+                <div class="title-box">
+                <h3>photos</h3>
+                <a href="">All photos</a>
+            </div>
+                <div class="photo-box">
+                    <div><img src="images/photo1.png" alt=""></div>
+                    <div><img src="images/photo2.png" alt=""></div>
+                    <div><img src="images/photo3.png" alt=""></div>
+                    <div><img src="images/photo4.png" alt=""></div>
+                    <div><img src="images/photo5.png" alt=""></div>
+                    <div><img src="images/photo6.png" alt=""></div>
+                </div>
+              </div>
+              
+              <div class="profile-intro">
+                <div class="title-box">
+                <h3>Friends</h3>
+                <a href="">All friends</a>
+            </div>
+            <p>217 (34 mutual)</p>
+                <div class="friend-box">
+                    <div><img src="images/member-1.png" alt=""><p>mrs jo</p></div>
+                    <div><img src="images/member-2.png" alt=""><p>joseph</p></div>
+                    <div><img src="images/member-3.png" alt=""><p>honjo</p></div>
+                    <div><img src="images/member-4.png" alt=""><p>mr kim</p></div>
+                    <div><img src="images/member-5.png" alt=""><p>Michael</p></div>
+                    <div><img src="images/member-6.png" alt=""><p>francis l</p></div>
+                    <div><img src="images/member-7.png" alt=""><p>Bradon jo</p></div>
+                    <div><img src="images/member-8.png" alt=""><p>liolena</p></div>
+                    <div><img src="images/member-9.png" alt=""><p>francisco</p></div>
+                </div>
+              </div>
+
+            </div>
+            <div class="post-col">
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                            <p>John deck</p>
+                            <small>Public <i class="fa fa-caret-down"></i></small>
+                        </div>
+                    </div>
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="what are your think about AI? john"></textarea>
+                        <div class="add-post-links">
+                            <a href="#"><img src="images/live-video.png" alt="">Live Vidio</a>
+                            <a href="#"><img src="images/photo.png" alt="">Photo/Vidio</a>
+                            <a href="#"><img src="images/feeling.png" alt="">Feeling/Activity</a>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="">
+                            <div>
+                                <p>John deck</p>
+                                <span>July 13 2023, 10:00AM</span>
+                            </div>
+                        </div>
+                     <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">1.“Behind every successful student, there is a <span>deactivated Facebook account</span>.”<br>
+                        2.“Life is like a journey and we are riding the bus.”<br>
+                        3.“Life is like a dance; the people you meet are your dance partners.”<br>
+                        4.“Life is like a canvas; the people you meet <span>provide the colors</span> to create a picture.”
+                     <a href="#">@Create own story</a></p>
+                     <img src="images/feed-image-1.png" alt="" class="post-img">
+                     <div class="post-row">
+                        <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="">120</div>
+                        <div><img src="images/comments.png" alt="">29</div>
+                        <div><img src="images/share.png" alt="">12</div>
+                        </div>
+                        <div class="post-profile-icon">
+                         <img src="images/profile-pic.png" alt=""><i class="fa fa-caret-down"></i>
+                        </div>
+                     </div>
+                 </div>
+                 <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/photo1.png" alt="">
+                            <div>
+                                <p>Dr.Herrison Wells</p>
+                                <span>July 13 2023, 11:00PM</span>
+                            </div>
+                        </div>
+                     <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">I hope you have a vacation that is as fantastic as you. You are always the life of the party; I’m sure you’ll have a wonderful time there.
+                     <a href="#">@Create own story</a></p>
+                     <img src="images/feed-image-2.png" alt="" class="post-img">
+                     <div class="post-row">
+                        <div class="activity-icons">
+                        <div><img src="images/like.png" alt="">113</div>
+                        <div><img src="images/comments.png" alt="">32</div>
+                        <div><img src="images/share.png" alt="">20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                         <img src="images/photo1.png" alt=""><i class="fa fa-caret-down"></i>
+                        </div>
+                     </div>
+                 </div>
+        
+                 <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/photo2.png" alt="">
+                            <div>
+                                <p>Ronny</p>
+                                <span>July 1 2023, 09:00AM</span>
+                            </div>
+                        </div>
+                     <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">“Sometimes you find yourself in the middle of nowhere and sometimes in the middle of nowhere you find yourself.” 
+                     <a href="#">@Create own story</a></p>
+                     <img src="images/feed-image-3.png" alt="" class="post-img">
+                     <div class="post-row">
+                        <div class="activity-icons">
+                        <div><img src="images/like.png" alt="">103</div>
+                        <div><img src="images/comments.png" alt="">13</div>
+                        <div><img src="images/share.png" alt="">5</div>
+                        </div>
+                        <div class="post-profile-icon">
+                         <img src="images/photo2.png" alt=""><i class="fa fa-caret-down"></i>
+                        </div>
+                     </div>
+                 </div>
+        
+                 <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/member-8.png" alt="">
+                            <div>
+                                <p>Mrs. Catlein</p>
+                                <span>June 13 2023, 11:00AM</span>
+                            </div>
+                        </div>
+                     <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">“Happy life is not where you have everything; but appreciating everything you have in the moment.”<br>“You are the source of happiness.”</p>
+                     <img src="images/feed-image-4.png" alt="" class="post-img">
+                     <div class="post-row">
+                        <div class="activity-icons">
+                        <div><img src="images/like.png" alt="">183</div>
+                        <div><img src="images/comments.png" alt="">62</div>
+                        <div><img src="images/share.png" alt="">34</div>
+                        </div>
+                        <div class="post-profile-icon">
+                         <img src="images/member-8.png" alt=""><i class="fa fa-caret-down"></i>
+                        </div>
+                     </div>
+                 </div>
+        
+                 <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/photo3.png" alt="">
+                            <div>
+                                <p>Eddey thawn</p>
+                                <span>July 3 2023, 2:00PM</span>
+                            </div>
+                        </div>
+                     <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">“I believe that words are strong, that they can overwhelm what we fear when fear seems more awful than life is good.”<br>
+                        Surely only boring people went in for conversations consisting of questions and answers. The art of true conversation consisted in the play of minds.</p>
+                     <img src="images/feed-image-5.png" alt="" class="post-img">
+                     <div class="post-row">
+                        <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="">123</div>
+                        <div><img src="images/comments.png" alt="">39</div>
+                        <div><img src="images/share.png" alt="">19</div>
+                        </div>
+                        <div class="post-profile-icon">
+                         <img src="images/photo3.png" alt=""><i class="fa fa-caret-down"></i>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- profile page end -->
+    <div class="footer">
+        <p>@copyright - 2023  easy to remove</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
